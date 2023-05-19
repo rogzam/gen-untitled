@@ -66,7 +66,7 @@ function draw() {
 }
 
 function drawPolyline(points, circleIndex) {
-  strokeWeight(1);
+  strokeWeight(0.8);
   stroke(255);
   noFill();
 

@@ -4,7 +4,7 @@ let pts = [];
 let selPts = [];
 let segIdx = 0;
 let n_pts = 8;
-let dotSize = 4; // Variable to control the size of the dots
+let dotSize = 2; // Variable to control the size of the dots
 let offsetPx = 12;
 let slider; // Variable to hold the slider
 
@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 0, 0,0);
+  background(0,0,0,0);
   strokeWeight(4);
   stroke(255, 255, 255, 125);
   noFill();
@@ -42,7 +42,7 @@ function draw() {
     //ellipse(point.x + offsetX, point.y + offsetY, dotSize, dotSize); // Draw a dot at the offset point
   }
   stroke(255);
-  strokeWeight(2);
+  strokeWeight(1);
   noFill();
 
   let prog = map(cFrame, 0, aLen, 0, 1);

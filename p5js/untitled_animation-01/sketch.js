@@ -1,4 +1,4 @@
-let aSpeed = 60;
+let aSpeed = 50;
 let circleALen = aSpeed *1.5;
 let pointsALen = aSpeed *1.5;
 let fadeALen = aSpeed/2;
@@ -11,10 +11,10 @@ let circleRad = 180;
 let circleOpac = 102;
 let phase = 0;
 let numPts = 44;
-let chosenPts = 22;
+let chosenPts = 12;
 let pts = [];
 let poly_pts = [];
-let dotSize = 6;
+let dotSize = 4;
 let unselPts = [];
 
 function setup() {
@@ -171,7 +171,7 @@ function drawPoly(frame, aLen) {
   let partProg = prog - fullSegs;
 
   stroke(255);
-  strokeWeight(3);
+  strokeWeight(1);
   noFill();
 
   for (let i = 0; i < fullSegs; i++) {
