@@ -5,3 +5,5 @@ A continuation to an attempt to recreate artworks from computer-generated art pi
 The circles are arranged in a seemingly random fashion, and the polygons become progressively more complex as the segments increase. The artwork was programmed on a Siemens System 4004, which was a pioneering computer system for graphics and image processing at the time. 'Untitled' is considered a significant work in the field of computer art, and it demonstrates Nees' innovative use of geometric forms and his skill in creating complex, visually stunning compositions with simple programming techniques.
 
 You can find the results of the attempt here.
+
+![original print at Victoria & Albert museum](images/untitled_print_vam.png)
