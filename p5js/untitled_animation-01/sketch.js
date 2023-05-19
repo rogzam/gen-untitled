@@ -171,7 +171,7 @@ function drawPoly(frame, aLen) {
   let partProg = prog - fullSegs;
 
   stroke(255);
-  strokeWeight(3);
+  strokeWeight(2);
   noFill();
 
   for (let i = 0; i < fullSegs; i++) {
