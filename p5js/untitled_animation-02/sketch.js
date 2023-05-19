@@ -14,7 +14,7 @@ let circleDiameter = canvas_h/7.5;
 
 function setup() {
   createCanvas(canvas_w*2, canvas_h* 2);
-  background(0,0,0,0);
+  background(0);
   angleMode(DEGREES);
 
   let offsetX = (width - (numCols * circleDiameter)) / 2;
@@ -39,7 +39,7 @@ function setup() {
 
 function draw() {
   clear();
-  background(0,0,0,0);
+  background(0);
 
   for (let i = 0; i < circleData.length; i++) {
     drawPolyline(selectedPoints[i], i);
