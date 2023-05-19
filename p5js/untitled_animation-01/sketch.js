@@ -25,6 +25,7 @@ function setup() {
 }
 
 function draw() {
+  clear();
   background(0,0,0,0);
 
   switch (phase) {

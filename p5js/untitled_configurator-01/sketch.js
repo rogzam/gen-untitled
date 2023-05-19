@@ -11,7 +11,7 @@ let slider; // Variable to hold the slider
 function setup() {
   createCanvas(800, 800);
   angleMode(DEGREES);
-  background(0,0,0,0);
+  background(0);
   genPtsOnCircle(150, 180);
   genRandPts(n_pts);
 
@@ -23,7 +23,8 @@ function setup() {
 }
 
 function draw() {
-  background(0,0,0,0);
+  clear();
+  background(0);
   strokeWeight(4);
   stroke(255, 255, 255, 125);
   noFill();

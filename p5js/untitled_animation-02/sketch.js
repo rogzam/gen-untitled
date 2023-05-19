@@ -38,6 +38,7 @@ function setup() {
 }
 
 function draw() {
+  clear();
   background(0,0,0,0);
 
   for (let i = 0; i < circleData.length; i++) {
