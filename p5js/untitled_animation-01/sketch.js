@@ -20,13 +20,13 @@ let unselPts = [];
 function setup() {
   createCanvas(800, 800);
   angleMode(DEGREES);
-  background(0,0,0,0);
+  background(0);
   genPtsOnCircle(numPts, circleRad);
 }
 
 function draw() {
   clear();
-  background(0,0,0,0);
+  background(0);
 
   switch (phase) {
     case 0: drawCircle(currentFrame, circleALen); break;
