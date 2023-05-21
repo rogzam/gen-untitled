@@ -4,7 +4,7 @@ let pts = [];
 let selPts = [];
 let segIdx = 0;
 let n_pts = 8;
-let dotSize = 2; // Variable to control the size of the dots
+let dotSize = 6; // Variable to control the size of the dots
 let offsetPx = 12;
 let slider; // Variable to hold the slider
 
@@ -24,26 +24,18 @@ function setup() {
 
 function draw() {
   clear();
-  background(0);
+  //background(0);
   strokeWeight(4);
   stroke(255, 255, 255, 125);
   noFill();
 
   // Draw all points first
-  fill(255, 255, 255, 51);
-  for (let point of selPts) {
-    ellipse(point.x, point.y, dotSize, dotSize); // Draw a dot at each point
-
-    // Calculate the offset point
-    let angle = atan2(point.y - height / 2, point.x - width / 2);
-    let offsetX = cos(angle) * offsetPx;
-    let offsetY = sin(angle) * offsetPx;
-
-    // Draw the offset point
-    //ellipse(point.x + offsetX, point.y + offsetY, dotSize, dotSize); // Draw a dot at the offset point
+  strokeWeight(dotSize);  // Adjust the size of points
+  for (let pt of selPts) {
+    point(pt.x, pt.y);  // Draw a point at each location
   }
   stroke(255);
-  strokeWeight(1);
+  strokeWeight(2);
   noFill();
 
   let prog = map(cFrame, 0, aLen, 0, 1);
@@ -77,6 +69,8 @@ function draw() {
       noLoop();
     }
   }
+
+// The rest of the code remains unchanged
 }
 
 function mousePressed() {

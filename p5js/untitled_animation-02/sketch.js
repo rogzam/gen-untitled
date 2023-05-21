@@ -1,4 +1,4 @@
-let animationLength = 1;
+let animationLength = 3;
 let currentFrame = 0;
 let circleData = [];
 let selectedPoints = [];
@@ -39,7 +39,7 @@ function setup() {
 
 function draw() {
   clear();
-  background(0);
+  //background(0);
 
   for (let i = 0; i < circleData.length; i++) {
     drawPolyline(selectedPoints[i], i);
@@ -67,7 +67,7 @@ function draw() {
 }
 
 function drawPolyline(points, circleIndex) {
-  strokeWeight(0.8);
+  strokeWeight(1);
   stroke(255);
   noFill();
 
@@ -133,9 +133,3 @@ function generateRandomPoints(numPoints, circleIndex) {
     tempPoints.splice(index, 1);
   }
 }
-
-
-
-
-
-
